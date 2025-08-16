@@ -35,6 +35,7 @@ list1 = []
 list2 = list()  # another way to create an empty list
 dict1 = {}
 dict2 = dict()  # another way to create an empty dictionary
+print("list 1:", list1)
 
 set1 = set()
 # tuple 
