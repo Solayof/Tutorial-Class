@@ -32,11 +32,28 @@ def calculate_area(width, length = 8):
     return area
 
 tuple_values = (7, 10)
-size = {"lengths": 10, "widths": 7}
+size = {"length": 10, "width": 7}
 result = calculate_area(**size) # result = calculate_area(length=10, width=7)
 calculate_area(*tuple_values) # calculate_area(7, 10)
 # result = calculate_area(5, 10)
 
 print(f"The area is {result}.")
 
+def hello():
+    print("Hello, World!")
+
+
+def arithmetic_operations(func, a, b):
+    func(a, b)
+
+def add(a, b):
+    print(f"The sum is {a + b}.")
+
+arithmetic_operations(add, 5, 10)
+
+# Annonymous function
+arithmetic_operations(lambda a, b: print(f"The difference is {a - b}."), 10, 5)
+sub = lambda a, b: print(f"The difference is {a - b}.")
+
+arithmetic_operations(sub, 20, 5)
 
