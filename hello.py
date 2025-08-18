@@ -13,7 +13,7 @@ names.append("Alice")
 
 # names.insert(1, "Bob")
 # print(names)
-# names.sort(reverse=True)
+names.sort()
 # print(names)
 
 # dictionary
