@@ -21,3 +21,9 @@ print(shape.width)  # accessing attribute
 # OOP - object oriented programming
 # class - blueprint
 
+class Rectangle(Shape): # inheritance
+    pass
+
+
+rect = Rectangle("My Rectangle")
+print(rect.name) # accessing attribute from parent class
