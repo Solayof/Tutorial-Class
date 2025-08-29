@@ -35,6 +35,9 @@ print(cat.speak()) # accessing overridden method
 
 print(cat)
 
+
+
+
 class Point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -49,6 +52,11 @@ class Point:
     
     # def __add__(self, other):
     #     return Point(self.x + other.x, self.y + other.y)
+
+    # def __eq__(self, other):
+    #     if isinstance(other, Point):
+    #         return self.x == other.x and self.y == other.y
+    #     return False
     
 
 point = Point(2, 3)
@@ -61,3 +69,7 @@ print(new_point)
 
 new_p = point + point2 # this will give error
 print(new_p)
+
+print(new_p == new_point) # this will give false because they are different objects
+
+dic = {}
